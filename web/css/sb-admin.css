@@ -4815,7 +4815,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #343a40;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
@@ -4895,12 +4895,17 @@ input[type="button"].btn-block {
 }
 
 .header{
-  color: white;
+  color: #1b1e21;
   font-size: 200rem;
   font-weight: bolder;
   font-family: YD2002;
   text-align: center;
   margin-top: 50px;
+}
+
+.confirmId{
+  float: right;
+  margin-top:-8px;
 }
 
 .card-body {
@@ -5393,7 +5398,6 @@ a.badge-warning:focus, a.badge-warning.focus {
 
 .badge-danger {
   color: #fff;
-  background-color: #dc3545;
 }
 
 a.badge-danger:hover, a.badge-danger:focus {
@@ -6994,7 +6998,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #f8f8f8 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
