@@ -35,7 +35,8 @@
     <!-- Navbar Search -->
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="검색" aria-label="Search" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="검색" aria-label="Search"
+                   aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                     <i class="fas fa-search"></i>
@@ -48,8 +49,9 @@
     <ul class="navbar-nav ml-auto ml-md-0">
 
         <li class="nav-item dropdown no-arrow">
-            <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+            <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                 <span class="badge badge-danger"><img src="pic/사람이미지.png"></span>
 
             </a>
@@ -61,7 +63,6 @@
             </div>
         </li>
     </ul>
-
 </nav>
 
 <div id="wrapper">
@@ -70,63 +71,109 @@
         <!-- Page Content -->
         <div class="container">
 
-            <!-- Page Heading -->
-            <h1 class="my-4">1시
-                <small>순위를 3등이나 5등까지만이라도</small>
-            </h1>
-
             <!-- Project One -->
-            <img src="icons8-test-account-48.png"/>
-            <p class="h3 mb-2 text-gray-800">이름</p>
-            <p class="mb-4">자기소개</p>
+            <div class="form-inline">
+                <img class="mx-3" src="pic/사람이미지.png"/>
+                <ul class="list-unstyled col-4">
+                    <li class="h3 mb-2 text-gray-800">이름</strong></li>
+                    <li>자기소개</li>
+                </ul>
+            </div>
             <hr/>
-
-            <button>퀴즈그룹 생성</button>
-            <button>퀴즈그룹 가입</button>
-            <hr/>
+            <div class="offset-2 my-3 ">
+                <a href="make-group.html"> <button type="button" class="btn btn-primary mx-3">퀴즈그룹 생성</button></a>
+                <button class="btn btn-primary">퀴즈그룹 가입</button>
+            </div>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">내가 가입한 그룹</h6>
+                <div class="form-inline card-header py-3">
+                    <h6 class="m-0 col-10 font-weight-bold">내가 가입한 그룹</h6>
+                    <button class="btn btn-default btn-xs btn-outline-primary float-right">편집</button>
                 </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <ol class="grouplist">
-                            <li>한신대 그룹</li>
-                            <ul>
+                    <div>
+                        <div>01</div>
+                        <div class="form-inline">
+                            <img class="col-4" src="pic/groupimg.PNG">
+                            <ul class="list-unstyled col-4">
+                                <li><strong>강태현 그룹</strong></li>
                                 <li>데이터 베이스</li>
                             </ul>
-                            <li>뭐시기 그룹</li>
-                            <ul>
-                                <li>데이터 베이스</li>
-                            </ul>
-                            <li>뭐시기 그룹</li>
-                            <ul>
-                                <li>데이터 베이스</li>
-                            </ul>
-                        </ol>
+                            <button class="btn btn-outline-primary float-right subBtn">
+                                <img src="pic/substract.png">
+                            </button>
+                        </div>
                     </div>
+                    <hr/>
+                    <div>
+                        <div>02</div>
+                        <div class="form-inline">
+                            <img class="col-4" src="pic/groupimg.PNG">
+                            <ul class="list-unstyled col-4">
+                                <li><strong>진정국 그룹</strong></li>
+                                <li>빅 데이터</li>
+                            </ul>
+                            <button class="btn btn-outline-primary float-right subBtn">
+                                <img src="pic/substract.png">
+                            </button>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div>03</div>
+                        <div class="form-inline">
+                            <img class="col-4" src="pic/groupimg.PNG">
+                            <ul class="list-unstyled col-4">
+                                <li><strong>차은우 그룹</strong></li>
+                                <li>자료구조</li>
+                            </ul>
+                            <button class="btn btn-outline-primary float-right subBtn">
+                                <img src="pic/substract.png">
+                            </button>
+                        </div>
+                    </div>
+                    <hr/>
                 </div>
             </div>
-
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.container -->
         </div>
+        <!-- /.container-fluid -->
 
-        <!-- /.container -->
-    </div>
-    <!-- /.container-fluid -->
-
-    <!-- Sticky Footer -->
-    <footer class="sticky-footer">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright © Your Website 2019</span>
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright © Your Website 2019</span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-</div>
-<!-- /.content-wrapper -->
+    </div>
+    <!-- /.content-wrapper -->
 
 </div>
 <!-- /#wrapper -->
@@ -137,7 +184,8 @@
 </a>
 
 <!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
